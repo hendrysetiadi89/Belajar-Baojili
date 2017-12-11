@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.combintech.baojili">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--for printer-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:name="com.combintech.baojili.application.BaseApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="AIzaSyCpucKrxYJL0zQOoLFQbymOBVXC7-NKHEo"/>-->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCHhDWGjbLrTeF5V1rXcFMGHNcOZQxt7CE"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name="com.combintech.baojili.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BJ.Launcher"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.auth.AuthActivity"
+            android:label="AuthActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.infostock.InfoStockByLocDetailActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/stock_by_location"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.infostock.InfoStockByItemDetailActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/stock_by_item"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/my_profile"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.item.AddItemActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/add_item"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.item.UpdateItemActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/update_item"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.user.AddUserActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/add_user"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.user.UpdateUserActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/update_user"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.location.AddLocationActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/add_location"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.location.UpdateLocationActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/update_location"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.itemin.AddItemInActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/add_item_in"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.itemin.UpdateItemInActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/update_item_in"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.itemout.AddItemOutActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/add_item_out"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.itemout.UpdateItemOutActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:label="@string/update_item_out"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+        </activity>
+
+        <activity android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
+            android:label="Read Barcode"/>
+
+        <activity
+            android:name=".activity.printer.SearchActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".activity.printer.PrintSettingsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_path" />
+        </provider>
+    </application>
+
+</manifest>

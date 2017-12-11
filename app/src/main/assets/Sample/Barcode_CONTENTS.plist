@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Code-EAN13</key>
+		<string>491234567890</string>
+		<key>Code-EAN8</key>
+		<string>1234567</string>
+		<key>Code-NW7</key>
+		<string>A123456B</string>
+		<key>Code-UPCA</key>
+		<string>12345678901</string>
+		<key>Code-UPCE</key>
+		<string>123456</string>
+		<key>Code-CODE39</key>
+		<string>123456789</string>
+		<key>Code-ITF</key>
+		<string>1451234567890</string>
+		<key>Code-CODE128</key>
+		<string>CODE 128</string>
+		<key>BarcodeName_NW7</key>
+		<string>NW-7</string>
+		<key>BarcodeName_EAN13</key>
+		<string>EAN-13</string>
+		<key>BarcodeName_ITF</key>
+		<string>ITF</string>
+		<key>BarcodeName_EAN8</key>
+		<string>EAN-8</string>
+		<key>BarcodeName_UPCE</key>
+		<string>UPC-E</string>
+		<key>BarcodeName_CODE39</key>
+		<string>CODE 39</string>
+		<key>BarcodeName_CODE128</key>
+		<string>CODE 128</string>
+		<key>BarcodeName_UPCA</key>
+		<string>UPC-A</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>BorderTypeLeftRight</key>
+		<string>LeftRight</string>
+		<key>BorderTypeTopBottom</key>
+		<string>TopBottom</string>
+		<key>BorderTypeTop</key>
+		<string>Top</string>
+		<key>BorderTypeBottom</key>
+		<string>Bottom</string>
+		<key>BorderTypeLeft</key>
+		<string>Left</string>
+		<key>BorderTypeRight</key>
+		<string>Right</string>
+		<key>FontSizePoint1.0</key>
+		<string>1.0pt</string>
+		<key>FontSizePoint4.0</key>
+		<string>4.0pt</string>
+		<key>FontSizePoint50.0</key>
+		<string>50.0pt</string>
+		<key>FontSizePoint100.0</key>
+		<string>100.0pt</string>
+		<key>FontSizePoint150.0</key>
+		<string>150.0pt</string>
+		<key>FontSizePoint_NoFontSizePoint</key>
+		<string>NoSizePoint</string>
+	</dict>
+</array>
+</plist>

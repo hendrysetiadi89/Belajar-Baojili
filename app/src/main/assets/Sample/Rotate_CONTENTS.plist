@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Rotate0</key>
+		<string>0</string>
+		<key>Rotate90</key>
+		<string>90</string>
+		<key>Rotate180</key>
+		<string>180</string>
+		<key>Rotate270</key>
+		<string>270</string>
+		<key>RotateDegree</key>
+		<string>Degree</string>
+		<key>Image</key>
+		<string>image.jpg</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>BR-1</key>
+		<string>123456789012</string>
+		<key>ST-1</key>
+		<string>String1</string>
+		<key>ST-2</key>
+		<string>String2</string>
+		<key>Image1</key>
+		<string>Earth.png</string>
+		<key>Image2</key>
+		<string>image.jpg</string>
+		<key>QR-1</key>
+		<string>QRCODE</string>
+	</dict>
+</array>
+</plist>

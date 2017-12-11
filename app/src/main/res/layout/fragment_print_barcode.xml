@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingBottom="@dimen/padding_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_16"
+            android:layout_marginRight="@dimen/padding_16">
+            <Button
+                android:gravity="center"
+                android:id="@+id/btn_search_printer"
+                android:layout_width="@dimen/medium_button_width"
+                android:layout_height="@dimen/medium_button_height"
+                android:background="@drawable/rect_gray_stroke_gray"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:text="@string/search_printer" />
+
+            <TextView
+                android:id="@+id/tv_selected_printer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_button_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rect_stroke_gray"
+                android:textColor="@color/gray_solid_700"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_8"
+                android:paddingRight="@dimen/padding_8"
+                android:layout_marginLeft="@dimen/padding_8"
+                android:layout_marginStart="@dimen/padding_8"
+                tools:text="Printer ABC"
+                android:textSize="@dimen/font_14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_button_height"
+            android:layout_marginTop="@dimen/padding_8"
+            android:layout_marginLeft="@dimen/padding_16"
+            android:layout_marginRight="@dimen/padding_16">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_copy"
+                android:layout_width="@dimen/medium_button_width"
+                android:layout_height="@dimen/medium_button_height"
+                android:background="@drawable/rect_gray_stroke_gray"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/jumlah_copy" />
+
+            <EditText
+                android:id="@+id/et_copy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_button_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rect_stroke_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_8"
+                android:paddingRight="@dimen/padding_8"
+                android:layout_marginLeft="@dimen/padding_8"
+                android:layout_marginStart="@dimen/padding_8"
+                android:textSize="@dimen/font_12"
+                android:inputType="number"
+                android:maxLength="2"
+                tools:text="2"/>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/padding_8"-->
+            <!--android:layout_marginLeft="@dimen/padding_16"-->
+            <!--android:layout_marginRight="@dimen/padding_16"-->
+            <!--android:visibility="gone">-->
+            <!--<Button-->
+                <!--android:gravity="center"-->
+                <!--android:id="@+id/btn_printer_setting"-->
+                <!--android:layout_width="@dimen/medium_button_width"-->
+                <!--android:layout_height="@dimen/large_button_height"-->
+                <!--android:background="@drawable/rect_gray_stroke_gray"-->
+                <!--android:clickable="true"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:foreground="?attr/selectableItemBackground"-->
+                <!--android:text="@string/printer_settings" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_selected_setting"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/large_button_height"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:background="@drawable/rect_stroke_gray"-->
+                <!--android:textColor="@color/gray_solid_700"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="@dimen/padding_8"-->
+                <!--android:paddingRight="@dimen/padding_8"-->
+                <!--android:layout_marginLeft="@dimen/padding_8"-->
+                <!--android:layout_marginStart="@dimen/padding_8"-->
+                <!--android:textSize="@dimen/font_12"-->
+                <!--tools:text="2 copy; After Cut; Half Cut;"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_16"
+            android:background="@drawable/rect_stroke_gray"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/padding_16"
+            android:layout_marginRight="@dimen/padding_16"
+            android:padding="@dimen/padding_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item"
+                android:layout_marginLeft="@dimen/padding_4"
+                android:layout_marginStart="@dimen/padding_4"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="true"
+                android:paddingTop="@dimen/padding_4">
+
+                <com.combintech.baojili.view.ZeroThresAutoCompleteTextView
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/code_star"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_16"
+                    android:maxLength="@integer/max_code_length"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_4"
+                app:hintEnabled="true">
+
+                <com.combintech.baojili.view.ZeroThresAutoCompleteTextView
+                    android:id="@+id/et_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/size_star"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_16"
+                    android:maxLength="@integer/max_size_length"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_item_check"
+                    android:text="@string/item_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bjWhite"
+                    android:layout_marginRight="@dimen/padding_8"
+                    android:layout_marginEnd="@dimen/padding_8"
+                    android:layout_gravity="center_vertical"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@color/bjLightBlue"/>
+                <ImageView
+                    android:id="@+id/iv_item_photo"
+                    android:layout_width="@dimen/large_icon_size"
+                    android:layout_height="@dimen/large_icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/padding_8"
+                    android:layout_marginEnd="@dimen/padding_8"
+                    tools:src="@drawable/logo_baojili"/>
+                <TextView
+                    android:id="@+id/tv_item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    tools:text="abc"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_16"
+            android:layout_marginRight="@dimen/padding_16"
+            android:layout_marginLeft="@dimen/padding_16"
+            android:background="@color/bjBlue"
+            android:text="@string/print"
+            android:textAllCaps="false"
+            android:textColor="@color/bjWhite"
+            android:foreground="?attr/selectableItemBackground"
+            android:textSize="@dimen/font_18" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="@dimen/padding_16"
+            android:layout_marginRight="@dimen/padding_16"
+            android:layout_marginLeft="@dimen/padding_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="result"
+            android:padding="@dimen/padding_4"
+            android:background="@drawable/rect_gray_stroke_gray"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Company</key>
+		<string>Sample Inc.</string>
+		<key>NumberLabel</key>
+		<string>No.</string>
+		<key>NameLabel</key>
+		<string>Name</string>
+		<key>KindLabel</key>
+		<string>Property</string>
+		<key>Number</key>
+		<string>01-0001-000001</string>
+		<key>Name</key>
+		<string>PC</string>
+		<key>Kind</key>
+		<string>Fixed</string>
+	</dict>
+	<dict>
+		<key>Company</key>
+		<string>Sample Inc.</string>
+		<key>NumberLabel</key>
+		<string>No.</string>
+		<key>NameLabel</key>
+		<string>Name</string>
+		<key>KindLabel</key>
+		<string>Property</string>
+		<key>Number</key>
+		<string>01-0002-000038</string>
+		<key>Name</key>
+		<string>Meeting table</string>
+		<key>Kind</key>
+		<string>Fixed</string>
+	</dict>
+	<dict>
+		<key>Company</key>
+		<string>Sample Inc.</string>
+		<key>NumberLabel</key>
+		<string>No.</string>
+		<key>NameLabel</key>
+		<string>Name</string>
+		<key>KindLabel</key>
+		<string>Property</string>
+		<key>Number</key>
+		<string>08-0148-000555</string>
+		<key>Name</key>
+		<string>Sofa</string>
+		<key>Kind</key>
+		<string>Fixed</string>
+	</dict>
+</array>
+</plist>

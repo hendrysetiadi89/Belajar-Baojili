@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding_36">36dp</dimen>
+    <dimen name="padding_32">32dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="medium_icon_size">32dp</dimen>
+    <dimen name="medium_large_icon_size">48dp</dimen>
+    <dimen name="large_icon_size">64dp</dimen>
+    <dimen name="xlarge_icon_size">96dp</dimen>
+    <dimen name="xxlarge_icon_size">128dp</dimen>
+
+    <dimen name="corner_4">4dp</dimen>
+    <dimen name="corner_2">2dp</dimen>
+
+
+    <dimen name="preferred_image_width">72dp</dimen>
+    <dimen name="preferred_grid_width">120dp</dimen>
+    <dimen name="font_menu">16sp</dimen>
+
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_28">28sp</dimen>
+    <dimen name="font_48">48sp</dimen>
+    <dimen name="nav_header_height">170dp</dimen>
+    <dimen name="single_choice_button_width">100dp</dimen>
+    <dimen name="single_choice_button_small_width">80dp</dimen>
+    <dimen name="spinner_height">30dp</dimen>
+    <dimen name="medium_button_width">120dp</dimen>
+    <dimen name="medium_button_height">32dp</dimen>
+    <dimen name="large_button_height">72dp</dimen>
+    <dimen name="map_height">250dp</dimen>
+</resources>

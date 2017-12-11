@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both barcodeWidthResult and barcodeHeightResult to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/view_title_logo_toolbar"/>
+
+        <include layout="@layout/fragment_content"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!-- drawer view. -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/bjWhite"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/bjWhite"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/nav_header_height"
+                    android:background="@color/gray_solid_700"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/large_icon_size"
+                        android:layout_height="@dimen/large_icon_size">
+                        <ImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/iv_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:src="@drawable/logo_baojili" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/circle_stroke_white" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Baojili"
+                        android:layout_marginTop="@dimen/padding_6"
+                        android:textSize="@dimen/font_12"
+                        android:textColor="@color/bjWhite"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_12"
+                        android:textColor="@color/bjWhite"
+                        tools:text="android.studio@android.com" />
+
+                </LinearLayout>
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_stock_info"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_stok"
+                    app:mdv_text="@string/info_stock" />
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_item_in"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_masuk"
+                    app:mdv_text="@string/item_in" />
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_item_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_keluar"
+                    app:mdv_text="@string/item_out" />
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_print_barcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_print"
+                    app:mdv_text="@string/print_barcode" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/padding_2"
+                    android:layout_marginBottom="@dimen/padding_2"
+                    android:background="@drawable/line_divider"/>
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_product"
+                    app:mdv_text="@string/product_list" />
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_user"
+                    app:mdv_text="@string/user_list" />
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_location_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@android:drawable/ic_menu_mylocation"
+                    app:mdv_text="@string/location_list" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/padding_2"
+                    android:layout_marginBottom="@dimen/padding_2"
+                    android:background="@drawable/line_divider"/>
+
+                <com.combintech.baojili.view.MenuDrawerView
+                    android:id="@+id/mdv_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mdv_icon_res="@drawable/icon_logout"
+                    app:mdv_text="@string/logout" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

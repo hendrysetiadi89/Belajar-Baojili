@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingRight="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_8"
+    android:paddingBottom="@dimen/padding_8"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_item_photo"
+        android:layout_width="@dimen/large_icon_size"
+        android:layout_height="@dimen/large_icon_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/padding_16"
+        tools:src="@drawable/logo_baojili" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_code_and_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_16"
+            tools:text="001 - L"/>
+        <TextView
+            android:id="@+id/tv_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/gray_solid_700"
+            tools:text="Desckripsi item"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_8">
+            <TextView
+                android:id="@+id/tv_label_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_colon_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:textSize="@dimen/font_12"
+                android:layout_marginLeft="@dimen/padding_32"
+                android:layout_toRightOf="@id/tv_label_1"
+                android:textColor="@color/gray_solid_700"/>
+
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Pasokan"
+                android:textSize="@dimen/font_12"
+                android:layout_marginLeft="@dimen/padding_8"
+                android:layout_toRightOf="@id/tv_colon_1"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_label_2"
+                android:layout_marginTop="@dimen/padding_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_label_1"
+                android:text="@string/price"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_colon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:textSize="@dimen/font_12"
+                android:layout_toRightOf="@id/tv_label_2"
+                android:layout_alignBaseline="@id/tv_label_2"
+                android:layout_alignLeft="@id/tv_colon_1"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp10.000"
+                android:textSize="@dimen/font_12"
+                android:layout_toRightOf="@id/tv_colon_2"
+                android:layout_alignBaseline="@id/tv_label_2"
+                android:layout_alignLeft="@id/tv_type"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_label_3"
+                android:layout_marginTop="@dimen/padding_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_label_2"
+                android:text="@string/cost"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_colon_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:textSize="@dimen/font_12"
+                android:layout_toRightOf="@id/tv_label_3"
+                android:layout_alignBaseline="@id/tv_label_3"
+                android:layout_alignLeft="@id/tv_colon_1"
+                android:textColor="@color/gray_solid_700"/>
+
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp8.000"
+                android:textSize="@dimen/font_12"
+                android:layout_toRightOf="@id/tv_colon_3"
+                android:layout_alignBaseline="@id/tv_label_3"
+                android:layout_alignLeft="@id/tv_type"
+                android:textColor="@color/gray_solid_700"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        app:srcCompat="@drawable/ic_delete_grey_24px"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_margin="@dimen/padding_8"/>
+
+</LinearLayout>

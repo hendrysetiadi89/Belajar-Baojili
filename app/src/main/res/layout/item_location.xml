@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingRight="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_8"
+    android:paddingBottom="@dimen/padding_8"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_16"
+            tools:text="Location name"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Jalan Budi luhur no213\nfwqfwqfwq"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/gray_solid_700"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8">
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Pemasok"
+            android:textSize="@dimen/font_12"
+            android:padding="@dimen/padding_4"
+            android:layout_gravity="center"
+            android:background="@drawable/rect_stroke_light_gray_rounded"
+            android:textColor="@color/gray_solid_700"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        app:srcCompat="@drawable/ic_delete_grey_24px"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_margin="@dimen/padding_8"/>
+
+</LinearLayout>

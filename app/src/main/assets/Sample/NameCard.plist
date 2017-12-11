@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LWContentType</key>
+	<string>LWContentTypeFrame</string>
+	<key>LWTapeLengthAuto</key>
+	<true/>
+	<key>LWLengthMM</key>
+	<integer>60</integer>
+	<key>LWFrameSizeMode</key>
+	<string>LWFrameSizeModePercent</string>
+	<key>LWBorderType</key>
+	<string>LWBorderTypeRound</string>
+	<key>LWLineThickness</key>
+	<string>LWLineThicknessBold</string>
+	<key>LWFrames</key>
+	<array>
+		<dict>
+			<key>LWContentID</key>
+			<string>NameCard-Name</string>
+			<key>LWContentType</key>
+			<string>LWContentTypeString</string>
+			<key>LWLineBreakMode</key>
+			<string>LWLineBreakModeStretch</string>
+			<key>LWContentWidth</key>
+			<integer>100</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

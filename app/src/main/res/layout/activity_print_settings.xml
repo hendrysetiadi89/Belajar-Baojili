@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vg_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_solid_300"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <TextView
+        android:id="@+id/print_settings_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/dodgerblue"
+        android:gravity="center"
+        android:text="@string/text_print_settings_title"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_below="@id/print_settings_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/copies_setting_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bjWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingStart="@dimen/padding_8"
+            android:text="@string/text_copies_setting" />
+
+        <TextView
+            android:id="@+id/tape_cut_setting_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bjWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingStart="@dimen/padding_8"
+            android:text="@string/text_tape_cut_setting" />
+
+        <TextView
+            android:id="@+id/half_cut_setting_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bjWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingStart="@dimen/padding_8"
+            android:text="@string/text_half_cut_setting" />
+
+        <TextView
+            android:id="@+id/low_speed_setting_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bjWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingStart="@dimen/padding_8"
+            android:text="@string/text_low_speed_setting" />
+
+        <TextView
+            android:id="@+id/density_setting_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bjWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingStart="@dimen/padding_8"
+            android:text="@string/text_density_setting" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/print_settings_ok_button"
+            android:contentDescription="@string/text_description_print_settings_ok_button"
+
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/button_print_settings_ok"
+            android:paddingTop="@dimen/padding_8"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+        </Button>
+
+        <EditText
+            android:id="@+id/copies_edit_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="85dp"
+            android:paddingTop="15.0px"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="right"
+            android:inputType="number"
+            android:text=""
+            android:background="@null"/>
+
+        <RadioGroup
+            android:id="@+id/tape_cut_radio_group"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="145dp"
+            android:layout_gravity="right" >
+            <RadioButton
+                android:id="@+id/each_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_each" />
+            <RadioButton
+                android:id="@+id/after_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_after" />
+            <RadioButton
+                android:id="@+id/none_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_none" />
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/half_cut_toggle_button"
+            android:textOn="@string/toggle_text_on"
+            android:textOff="@string/toggle_text_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="200dp"
+            android:text="" />
+
+        <ToggleButton
+            android:id="@+id/low_speed_toggle_button"
+            android:textOn="@string/toggle_text_on"
+            android:textOff="@string/toggle_text_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="260dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/density_edit_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="325dp"
+            android:paddingTop="15.0px"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="20.0px"
+            android:paddingRight="20.0px"
+            android:gravity="right"
+            android:inputType="numberSigned"
+            android:text=""
+            android:background="@null"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

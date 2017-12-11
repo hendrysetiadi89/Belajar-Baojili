@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>String-1</key>
+		<string>Page 1</string>
+		<key>String-2-1</key>
+		<string>String1</string>
+		<key>String-2-2</key>
+		<string>String2</string>
+		<key>String-2-3</key>
+		<string>String3</string>
+		<key>String-3-1</key>
+		<string>Left</string>
+		<key>String-3-2</key>
+		<string>Center</string>
+		<key>String-3-3</key>
+		<string>Right</string>
+		<key>String-4</key>
+		<string>SDK Sample</string>
+		<key>Image-1</key>
+		<string>Earth.png</string>
+		<key>Code-1</key>
+		<string>491234567890</string>
+		<key>QR-1</key>
+		<string>1234567890</string>
+	</dict>
+</array>
+</plist>

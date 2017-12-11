@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke
+                android:width="1dp"
+                android:color="@color/bjLightBlue" />
+            <solid
+                android:color="@color/bjWhite"
+                android:paddingLeft="@dimen/padding_8"
+                android:paddingTop="@dimen/padding_8"/>
+            <corners android:radius="@dimen/corner_4" />
+            <solid android:color="@color/bjBlue" />
+        </shape>
+    </item>
+    <item android:state_selected="false" android:drawable="@drawable/rect_stroke_light_gray_rounded">
+    </item>
+</selector>

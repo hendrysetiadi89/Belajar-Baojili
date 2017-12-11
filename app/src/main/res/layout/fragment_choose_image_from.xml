@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:divider="@drawable/line_divider"
+        android:showDividers="middle"
+        android:background="@drawable/rect_white_stroke">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16"
+            android:textSize="@dimen/font_14"
+            android:text="@string/choose_image"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:id="@+id/vg_camera"
+            android:paddingLeft="@dimen/padding_16"
+            android:paddingRight="@dimen/padding_16"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="@dimen/medium_icon_size"
+                android:layout_height="@dimen/medium_icon_size"
+                android:src="@drawable/ic_camera"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginRight="@dimen/padding_16"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camera"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vg_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="@dimen/padding_16"
+            android:paddingRight="@dimen/padding_16"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="@dimen/medium_icon_size"
+                android:layout_height="@dimen/medium_icon_size"
+                android:src="@drawable/ic_gallery"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginRight="@dimen/padding_16"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gallery"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
